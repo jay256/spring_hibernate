@@ -1,0 +1,231 @@
+/* 
+    Document   : newstyle
+    Created on : Jun 23, 2013, 12:36:24 PM
+    Author     : samsung
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+    
+}
+.fl { float: left; }
+.fr { float: right; }
+.cb { clear: both; }
+
+
+        
+/* ---------- MENU BUTTONS ---------- */
+.menu-email { background-image: url("../images/icons/menu/menu-email.png"); }
+	.menu-email:hover { background-image: url("../images/icons/menu/menu-email-over.png"); }
+	.menu-email-special {
+		background-image: url("../images/icons/menu/menu-email-special.png");
+		color: #7fcdff;
+	}
+	
+.menu-settings { background-image: url("../images/icons/menu/menu-settings.png"); }
+	.menu-settings:hover { background-image: url("../images/icons/menu/menu-settings-over.png"); }
+
+.menu-logoff { background-image: url("../images/icons/menu/menu-logoff.png"); }
+	.menu-logoff:hover { background-image: url("../images/icons/menu/menu-logoff-over.png"); }
+
+.menu-user { background-image: url("../images/icons/menu/menu-user.png"); }
+
+.button {
+	padding: 0.833em; /* 10/12 */
+	
+	display: inline-block;
+	text-decoration: none;
+	background-repeat: no-repeat;
+}
+
+.dark {
+	background-color: #3f4551;
+	color: white;
+}
+	.dark:hover {
+		background-color: #5d6677;
+		color: white;
+	}
+
+.text-upper { text-transform: uppercase; }
+
+.small-button { padding: 0.312em 1em; /* 5/16 16/16 */ }
+
+.image-left {
+	background-position: 0.833em center; /* 10/12 */
+	padding-left: 3em; /* 36/12 */
+}
+
+.image-right {
+	background-position: right center;
+	padding-right: 3em; /* 36/12 */
+}
+
+.ic-left-arrow { background-image: url("../images/icons/ic_left.png"); }
+.ic-right-arrow { background-image: url("../images/icons/ic_right.png"); }
+.ic-print { background-image: url("../images/icons/ic_print.png"); }
+.ic-cancel { background-image: url("../images/icons/ic_cancel.png"); }
+.ic-delete { background-image: url("../images/icons/ic_delete.png"); }
+.ic-add { background-image: url("../images/icons/ic_add.png"); }
+.ic-download { background-image: url("../images/icons/ic_download.png"); }
+.ic-edit { background-image: url("../images/icons/ic_edit.png"); }
+.ic-favorite { background-image: url("../images/icons/ic_favorite.png"); }
+.ic-lock { background-image: url("../images/icons/ic_lock.png"); }
+.ic-power { background-image: url("../images/icons/ic_power.png"); }
+.ic-refresh { background-image: url("../images/icons/ic_refresh.png"); }
+.ic-settings { background-image: url("../images/icons/ic_settings.png"); }
+.ic-upload { background-image: url("../images/icons/ic_upload.png"); }
+.ic-search { background-image: url("../images/icons/ic_zoom.png"); }
+
+/* Page Container Style */
+.page-full-width { padding: 0 1.875em; /* 30/16 */ }
+div.container{ position:relative; padding: 0 1.875em;}
+
+a#company-branding img { height: 79px; }	
+a#company-branding-small img { height: 50px; }	
+
+fieldset{padding: 1em;}
+/*div.navbar{background-color: #2a2e36;}*/
+	/*padding: 0.625em 0;}*/
+/*div.navbar-inner{background-color: #2a2e36;}*/
+dropdown-menu label { label-style-type: none; }
+	
+		dropdown-menu label  {
+			
+			padding: 0.833em 1.25em; /* 10/12 15/12 */
+			border-top: 1px solid #f8f9fa;
+			display: block;
+			background: #ffffff url('../images/menu-dark-indicator.png') no-repeat right center;
+                        /*color: ;*/
+                        text-transform: none;
+		}
+			dropdown-menu label :hover {
+				background-color: #fff;}
+div.navbar-content{padding-top:  1em;}
+/*div#top-bar {background-color: #2a2e36;  10/16 }*/
+div.page-header { padding-bottom: 0;padding-top: 0; /* 20/16 */ }
+
+div#page-header-with-tabs { padding: 1.25em 0 0 0; /* 20/16 */ }
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+/* ---------- TABS ---------- */
+ul#tabs { list-style-type: none; }
+
+	ul#tabs li { float: left; }
+	
+		ul#tabs li a {
+			border: 1px solid #eeefef;
+			border-bottom: none;
+			padding: 1.666em 0.833em; /* 20/12 10/12 */
+			margin: 0 0.416em -1px 0;
+			display: block;
+			color: #9498a1;
+		}
+			ul#tabs li a:hover { color: #2a2e36; }
+
+ul#tabs li a.dashboard-tab {
+	background: transparent url('../images/tab-dashboard.png') no-repeat 0.833em center /* 10/12 */;
+	padding-left: 3em; /* 36/12 */	
+}
+
+ul#tabs li a.active-tab, ul#tabs li a.active-tab:hover {
+	background-color: #f8f9fa;
+	font-weight: bold;
+	color: #2a2e36;
+}
+div.well label.alt-label { size: .5em; text-transform: none;margin: 0;padding: 0; background: #f5f5f5;color:#8D8D8E; }
+#wellid {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 4px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+div.well label.alt-label { size: .5em; text-transform: none;margin: 0;padding: 0; background: #f5f5f5;color:#8D8D8E; }
+div.well label.comments { size: .5em; text-transform: none;margin: 0;padding: 2.5em; background: #f5f5f5;color:#8D8D8E; }
+div.well label{label-style-type: none;}
+div.well label {
+    background: 	#8D8D8E;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.25em;  /*15/12*/ 
+    margin-top: 0;
+    color: white;
+}
+div.well label :hover {
+    background-color: #f8f9fa;}
+
+div.well h4  {
+
+    padding: 0.833em 1em; /* 10/12 15/12 */
+    border-top: 1px solid #f8f9fa;
+    display: block;
+    background: #3f4551 url('../images/menu-dark-indicator.png') no-repeat right center;
+    color: white;
+    text-transform: uppercase;
+}
+.default-width-input { width: 20.833em; /* Default Value. Equals 250px for the 12px font size */ }	
+
+.full-width-input { width: 95%; }
+
+
+/* Textarea Style */
+.full-width-textarea {
+	width: 95%;
+	height: 12.5em; /* 150/12 */
+}
+form input[type="text"], input[type="password"], textarea {
+	border: 1.5px solid #d9dbdd;
+	outline: none;
+}
+form#search-form input {
+	border: none;
+	/* The inner text overflows on the BG image, so we're setting a right padding to stop that */
+	padding: 0.66em; /* 36/12 */
+}
+	form#search-form input {
+		/* Same as .dark:hover */
+		background-color: #5d6677;
+		color: white;
+        padding: .6em;}
+        
+ .scroll-pane {
+width: 900px;
+height: 400px;
+overflow:auto;
+}
+
+/* ---------- FOOTER ---------- */
+div#footer {
+	text-align: center;
+	padding: 1.875em 0; /* 30/16 */
+}
+ 
